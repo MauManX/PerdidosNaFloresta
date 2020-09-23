@@ -41,6 +41,17 @@ function setup() {
   textFont(font1);
   textStyle(BOLD);
 
+  sndAlura.setVolume(0.2);
+  sndJump.setVolume(0.2);
+  sndHit.setVolume(0.2);
+  sndStart.setVolume(0.2);
+  sndGameOver.setVolume(0.2);
+  sndGameMusic.setVolume(0.2);
+  sndShark.setVolume(0.2);
+  sndPoop.setVolume(0.2);
+  sndNext.setVolume(0.2);
+  sndSecret.setVolume(0.2);
+  
   bg = new BG(imgBG);
   ground = new Ground(imgGround);
   hero[0] = new Hero(imgHero, 0, 30, 30, 30, Scale);
