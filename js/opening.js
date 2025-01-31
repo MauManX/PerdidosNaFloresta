@@ -19,7 +19,7 @@ class Opening {
     switch (this.part) {
       case 0:
         image(imgAlura, 0, 0, width, height);
-        if (this.time === 5) {
+        if (this.time >= 5) {
           sndAlura.play();
         }
         if (this.time === 100) {
