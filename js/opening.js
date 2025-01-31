@@ -17,11 +17,10 @@ class Opening {
 
   draw() {
     switch (this.part) {
-      case 0:
+      case 0://alura
         image(imgAlura, 0, 0, width, height);
-        if (this.time >= 5) {
+        if (this.time === 5) {
           sndAlura.play();
-          console.log(sndAlura.isPlaying());
         }
         if (this.time === 100) {
           this.time = 0;
@@ -30,7 +29,7 @@ class Opening {
           this.time++;
         }
         break;
-      case 1:
+      case 1://gamedev
         image(imgGameDev, (width - 285) / 2, (height - 119) / 2);
         if (this.time === 100) {
           this.time = 0;
@@ -40,7 +39,7 @@ class Opening {
           this.time++;
         }
         break;
-      case 2:
+      case 2://title
         image(imgTitle, 0, 0, width, height,
           200, 0, 100, 100);
         if (this.time === 100) {
@@ -61,7 +60,7 @@ class Opening {
           this.time++;
         }
         break;
-      case 3:
+      case 3://story
         if (this.time === 50) {
           // story.time = 0;
           // story.part = 0;
