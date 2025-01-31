@@ -41,16 +41,16 @@ function setup() {
   textFont(font1);
   textStyle(BOLD);
 
-  sndAlura.setVolume(0.2);
-  sndJump.setVolume(0.2);
-  sndHit.setVolume(0.2);
-  sndStart.setVolume(0.2);
-  sndGameOver.setVolume(0.2);
-  sndGameMusic.setVolume(0.2);
-  sndShark.setVolume(0.2);
-  sndPoop.setVolume(0.2);
-  sndNext.setVolume(0.2);
-  sndSecret.setVolume(0.2);
+  sndAlura.setVolume(0.5);
+  sndJump.setVolume(0.5);
+  sndHit.setVolume(0.5);
+  sndStart.setVolume(0.5);
+  sndGameOver.setVolume(0.5);
+  sndGameMusic.setVolume(0.5);
+  sndShark.setVolume(0.5);
+  sndPoop.setVolume(0.5);
+  sndNext.setVolume(0.5);
+  sndSecret.setVolume(0.5);
   
   bg = new BG(imgBG);
   ground = new Ground(imgGround);
