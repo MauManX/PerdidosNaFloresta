@@ -21,6 +21,7 @@ class Opening {
         image(imgAlura, 0, 0, width, height);
         if (this.time >= 5) {
           sndAlura.play();
+          console.log(sndAlura.isPlaying());
         }
         if (this.time === 100) {
           this.time = 0;
