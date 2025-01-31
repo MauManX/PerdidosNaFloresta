@@ -41,16 +41,16 @@ function setup() {
   textFont(font1);
   textStyle(BOLD);
 
-  sndAlura.setVolume(0.2);
-  sndJump.setVolume(0.2);
-  sndHit.setVolume(0.2);
-  sndStart.setVolume(0.2);
-  sndGameOver.setVolume(0.2);
-  sndGameMusic.setVolume(0.2);
-  sndShark.setVolume(0.2);
-  sndPoop.setVolume(0.2);
-  sndNext.setVolume(0.2);
-  sndSecret.setVolume(0.2);
+  sndAlura.setVolume(0.5);
+  sndJump.setVolume(0.5);
+  sndHit.setVolume(0.5);
+  sndStart.setVolume(0.5);
+  sndGameOver.setVolume(0.5);
+  sndGameMusic.setVolume(0.5);
+  sndShark.setVolume(0.5);
+  sndPoop.setVolume(0.5);
+  sndNext.setVolume(0.5);
+  sndSecret.setVolume(0.5);
   
   bg = new BG(imgBG);
   ground = new Ground(imgGround);
@@ -82,11 +82,14 @@ function setup() {
   opening = new Opening();
   night = new Night();
   konamiCode = new KonamiCode();
-
+  splash = new Splash();
 }
 
 function keyPressed() {
   switch (Scene) {
+    case -1:
+      splash.press();
+      break;
     case 0:
       konamiCode.press(key);
       if (key === 'Enter') {
@@ -119,6 +122,9 @@ function keyPressed() {
 
 function mousePressed() {
   switch (Scene) {
+    case -1:
+      splash.press();
+      break;
     case 0:
       if (konamiCode.active) {
         life.lives = 10;
@@ -164,6 +170,9 @@ function draw() {
   background(0);
 
   switch (Scene) {
+    case -1: //splash
+      splash.draw();
+      break;
     case 0: //opening/title
       opening.draw();
       break;

@@ -22,7 +22,7 @@ class Opening {
         if (this.time === 5) {
           sndAlura.play();
         }
-        if (this.time === 100) {
+        if (this.time === 150) {
           this.time = 0;
           this.part = 1;
         } else {
@@ -31,7 +31,7 @@ class Opening {
         break;
       case 1:
         image(imgGameDev, (width - 285) / 2, (height - 119) / 2);
-        if (this.time === 100) {
+        if (this.time === 150) {
           this.time = 0;
           this.part = 2;
           sndGameMusic.loop();

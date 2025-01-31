@@ -36,6 +36,7 @@ let story;
 let opening;
 let night;
 let konamiCode;
+let splash;
 
 let Level = 1;
 let Speed = 2;
@@ -43,7 +44,7 @@ let Score = 0;
 let NextLevel = 0;
 let GameOver = 0;
 
-let Scene = 0;
+let Scene = -1;
 let delay = 0;
 let jumpNilce = 0;
 let Scale = 4;
